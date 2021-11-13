@@ -1,2 +1,3 @@
-export * from './ping.controller';
-export * from './controller1.controller';
+export * from './empresa.controller';
+export * from './empleado.controller';
+export * from './proveedor.controller';
