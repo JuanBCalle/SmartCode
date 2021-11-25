@@ -13,19 +13,13 @@ export class Proveedor extends Entity {
     type: 'string',
     required: true,
   })
-  Nombre: string;
+  Nombres: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  RazonSocial: string;
-
-  @property({
-    type: 'string',
-    required: true,
-  })
-  Direccion: string;
+  Apellidos: string;
 
   @property({
     type: 'string',
@@ -37,7 +31,13 @@ export class Proveedor extends Entity {
     type: 'string',
     required: true,
   })
-  ActividadEconomica: string;
+  Direccion: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  Email: string;
 
   @property({
     type: 'string',

@@ -1,6 +1,6 @@
 import {inject} from '@loopback/core';
 import {DefaultCrudRepository} from '@loopback/repository';
-import {MongoDbDataSource} from '../datasources';
+import {SmartCodeDbDataSource} from '../datasources';
 import {Proveedor, ProveedorRelations} from '../models';
 
 export class ProveedorRepository extends DefaultCrudRepository<
@@ -9,7 +9,7 @@ export class ProveedorRepository extends DefaultCrudRepository<
   ProveedorRelations
 > {
   constructor(
-    @inject('datasources.mongoDB') dataSource: MongoDbDataSource,
+    @inject('datasources.smartCodeDB') dataSource: SmartCodeDbDataSource,
   ) {
     super(Proveedor, dataSource);
   }
